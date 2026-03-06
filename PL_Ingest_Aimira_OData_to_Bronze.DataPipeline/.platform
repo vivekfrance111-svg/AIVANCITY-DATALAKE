@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "PL_Ingest_Aimira_OData_to_Bronze"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "64dae307-1757-bb08-4643-eb50f876958b"
+  }
+}

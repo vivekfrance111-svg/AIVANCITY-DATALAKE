@@ -1,0 +1,5473 @@
+{
+  "properties": {
+    "jobMode": "Batch",
+    "source": {
+      "type": "ODataResource",
+      "connectionSettings": {
+        "type": "OData",
+        "externalReferences": {
+          "connection": "4c316929-39b6-4466-bfbd-6c30abe82be4"
+        }
+      },
+      "additionalSettings": {
+        "protocolSettings": {}
+      }
+    },
+    "destination": {
+      "type": "LakehouseTable",
+      "connectionSettings": {
+        "type": "Lakehouse",
+        "typeProperties": {
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "artifactId": "31b698a3-a683-9d60-4685-a484eef36401",
+          "rootFolder": "Tables"
+        }
+      }
+    },
+    "policy": {
+      "timeout": "0.12:00:00"
+    }
+  },
+  "activities": [
+    {
+      "id": "b19907b4-db48-434b-9a7a-d99c224e4ae8",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Academie_CarteEnseignant"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Academie_CarteEnseignant"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "53305062-e844-46bc-8f14-f78cc9f4def7",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Academie_CommentaireEnseignant"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Academie_CommentaireEnseignant"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "5381c5e2-9c8b-47c4-af02-58055c4eec98",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Academie_ContratEnseignant"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Academie_ContratEnseignant"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "4be709e8-02fa-4598-a6f0-bbde531a7efb",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Academie_Departement"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Academie_Departement"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "20c96636-3220-480c-bba5-fcbbf13ac837",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Academie_Enseignant"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Academie_Enseignant"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "2e866aca-ac6f-46d0-b381-24da67d1f604",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Academie_EnseignantCampus"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Academie_EnseignantCampus"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "0fc45309-ae05-48ac-ad83-d0b273757ad8",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Academie_EnseignantContratPrestationDetail"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Academie_EnseignantContratPrestationDetail"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "4d06c40f-b45f-4c7d-ae5c-f2569bd86061",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Academie_EnseignantCours"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Academie_EnseignantCours"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "30f67c84-ab04-4915-87b6-2d66045f3acf",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Academie_EnseignantCoursPourBudget"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Academie_EnseignantCoursPourBudget"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "bd551c6f-65a8-440b-80f7-d8f507004eba",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Academie_EnseignantPiece"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Academie_EnseignantPiece"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "a031aad0-207e-45a5-835b-d159db8fea9f",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Academie_MailEnseignant"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Academie_MailEnseignant"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "17196125-ebc7-4ddf-8b57-aa222f675465",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_Agent"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_Agent"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "8b684466-552b-4821-a800-a15ae521ef27",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_AutreCandidature"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_AutreCandidature"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "8f4ceefc-376d-4897-bd2c-af6471db83ba",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_CandidaturePiece"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_CandidaturePiece"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "dfa3fe62-f164-4cdc-97e9-16cf2bddec47",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_Commentaire"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_Commentaire"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "909ebb85-ea55-4319-97d0-804ae385ceb7",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_Contact"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_Contact"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "bd78e906-96f5-4411-a427-0fcb35511c55",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_DossierCandidature"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_DossierCandidature"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "e63bb817-8f87-44b2-b2b5-7d134c6430fe",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_DossierCandidatureSansVoieAdmission"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_DossierCandidatureSansVoieAdmission"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "ea31b1d9-348e-4d93-8bba-f434cfdd01f5",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_ExperienceProfessionnelle"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_ExperienceProfessionnelle"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "2f4f2461-dded-4319-8564-823928104377",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_MailCandidat"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_MailCandidat"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "8dc1f692-3d47-4c91-ab3d-50e995c8e108",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_NiveauLangue"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_NiveauLangue"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "ae878e82-a4d1-4e2d-b0d0-d40f520b5f45",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_NiveauTest"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_NiveauTest"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "66614781-0966-4fdf-a739-bc17277239f9",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_Ouverture"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_Ouverture"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "10a35e9a-50df-45db-b816-a0eb61a1828e",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_PieceTelechargee"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_PieceTelechargee"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "1d1dac12-8e93-47ab-9dfe-eb47299b53f3",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_Qualification"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_Qualification"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "769fe580-50b5-4b54-bf36-66fe5ce146f4",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_QuestionnaireCandidat"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_QuestionnaireCandidat"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "85a2d3db-44f4-4342-8c65-23f59eb112c6",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_QuestionnaireEvaluation"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_QuestionnaireEvaluation"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "97a4faa6-051f-46a9-a0a8-78c19726297d",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_QuestionnaireReferent"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_QuestionnaireReferent"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "d9940869-bc64-4b3d-9361-4c9f30a011ca",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_QuestionOuverte"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_QuestionOuverte"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "10dd3114-a009-4a23-bf3d-c41c95ae9e66",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_Referent"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_Referent"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "19bfaaca-3b85-4622-a011-b681f88dfb61",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_Scolarite"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_Scolarite"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "1eebf741-507e-4824-8e5d-d5dbf1e3265b",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_VoieAdmission"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_VoieAdmission"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "f4af3b8d-7f06-4168-97a4-ab2705014ce7",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_VoieAdmissionCreneau"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_VoieAdmissionCreneau"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "c0fc58b1-cb6c-4d10-bf13-69159d94975e",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Candidature_VoieAdmissionPiece"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Candidature_VoieAdmissionPiece"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "9c4414f1-025b-46cf-adb5-c4618bcc76ff",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_ApprenantPeriodeSansFraisScolarite"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_ApprenantPeriodeSansFraisScolarite"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "33b72362-0646-4ba9-91ce-cd0186126602",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_BalanceClientaZero"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_BalanceClientaZero"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "86aee643-b990-4a6c-aecb-0d2b824a8c34",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_BalanceClientRelance"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_BalanceClientRelance"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "0677d036-7832-49c4-ad4e-6e35dddb58bb",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_BalanceClientSansPeriode"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_BalanceClientSansPeriode"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "19797506-1810-45ee-bc51-c3ac05b78d66",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_CandidatureSimplifiee"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_CandidatureSimplifiee"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "d94f783a-9ebd-49e8-9c5e-0eb23232b1cc",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_CategoriePrestation"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_CategoriePrestation"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "4dc8dcba-9f43-4ce5-8c85-15b1a9179c5e",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_Client"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_Client"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "37648029-34b0-46f9-9b7c-82286fa885f8",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_ClientNonEquilibre"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_ClientNonEquilibre"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "815857ea-4bf6-4280-9142-7b77afdca644",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_CodeAnalytique"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_CodeAnalytique"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "595bad68-5768-44cd-a336-fe365d3b5f41",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_CommentaireApprenant"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_CommentaireApprenant"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "9bde240a-291d-4c65-9f3c-5c6887e4f174",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_Complete"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_Complete"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "ddf0ccfc-dcba-4826-b6e8-ea1862c50997",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_CompteBancaire"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_CompteBancaire"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "b3511cbc-0261-49d6-acb2-e39777426548",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_CompteComptable"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_CompteComptable"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "bb8b9574-599c-4ff2-91ed-9d91e2e2b5f6",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_FactureNonLettree"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_FactureNonLettree"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "7dd25026-8a80-4458-ae56-80427186b0e5",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_FactureNonLettreeDetail"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_FactureNonLettreeDetail"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "00e4a4c2-5fda-4acc-a9dd-5ca586bc0099",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_MailClient"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_MailClient"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "ec7cde75-ffc3-45af-841a-58f05bfeb31b",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_MandatSEPA"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_MandatSEPA"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "633f975a-ddd5-47c2-baa8-05db60e2dd87",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_ModalitePaiement"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_ModalitePaiement"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "4327fa40-ce00-405f-bcce-93bee130a1dd",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_ModaliteRemise"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_ModaliteRemise"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "bbcec049-452b-4df8-b9aa-9195d2299ef4",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_Nature"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_Nature"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "bb2217a3-b949-4ec0-b3dc-eff86660b895",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_Prestation"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_Prestation"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "c13821af-fc05-47b1-9c63-8ba9c6ecfaa7",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_PrestationEtDetailModalite"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_PrestationEtDetailModalite"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "21f82993-7a46-4ab0-aed6-9933a31e188c",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_PrestationEtDetailPrestation"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_PrestationEtDetailPrestation"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "a62e1320-da63-46ce-a45c-47a3556e7cd4",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_Preste"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_Preste"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "590918e4-45de-4b06-b928-c2f67eb1d261",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_Preste_FA"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_Preste_FA"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "6c7c5aa3-839d-49bd-a0ce-c51e376a6e28",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_Preste_FI"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_Preste_FI"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "f6ecee0b-64ba-424d-b04a-4884e2e148a6",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_ProgrammeRegimeEntiteFacturation"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_ProgrammeRegimeEntiteFacturation"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "01db4fa5-35e3-40fa-82e6-cef839b2d4b2",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_Simplifiee"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_Simplifiee"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "60539dc2-9b19-4130-bac7-10d9f7e8a817",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_Simplifiee_BalanceClient"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_Simplifiee_BalanceClient"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "1db010c6-39da-46aa-bfb4-9fd3b5f8b675",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_Simplifiee_NonLettree"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_Simplifiee_NonLettree"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "1d453a0d-a2d2-46f3-95b2-da9f135de137",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_TransmissionFactureCFADOCK"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_TransmissionFactureCFADOCK"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "b3c47a8c-dbf7-451a-a189-3d3389455d66",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_TypePaiement"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_TypePaiement"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "8456ee54-023d-4d7e-bcf5-713a9ef5c4ec",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Finance_VoieEntreeReinscriptionPrestationsEtModalitesAssociees"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Finance_VoieEntreeReinscriptionPrestationsEtModalitesAssociees"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "cf0870eb-9caa-48a8-b646-7946b250a1d1",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_ApprenantIdentite"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_ApprenantIdentite"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "7c05d09b-c9cf-438d-bd4e-c03031b5de88",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_ApprenantInformationComplementaire"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_ApprenantInformationComplementaire"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "5c11a5bf-e1bd-4115-a9f4-5b3c511844a2",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_ApprenantInscription"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_ApprenantInscription"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "a1c7e54e-e274-414f-a972-f151decee2d7",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_ApprenantInscriptionPeriode"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_ApprenantInscriptionPeriode"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "8e266af0-589e-4dde-a220-48216e81c0f2",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_ApprenantPiece"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_ApprenantPiece"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "89af30be-3df7-4368-ab94-0df7ce8bed5e",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_ApprenantSansPeriode"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_ApprenantSansPeriode"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "1a019cc5-af60-45db-9e3c-d8616c0bd25d",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_Avertissement"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_Avertissement"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "a4b9402f-b7fe-40fa-8d59-675a083bc6fd",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_CarteApprenant"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_CarteApprenant"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "cd08564e-bd4e-4c8f-b9d8-a727546e4521",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_CEREQ"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_CEREQ"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "76be9e47-c9c8-47aa-928f-f370f391ea87",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_CommentaireApprenant"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_CommentaireApprenant"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "965b74c0-d80c-41d3-96db-480a48768a8a",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_CVECExportCROUS"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_CVECExportCROUS"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "c933e566-6a45-4afb-991b-5b12d844c0dc",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_EtatRestrictionIntranet"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_EtatRestrictionIntranet"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "c79716e1-ba86-4f61-8adc-c06a228bb2a0",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_ExtractionEmevia"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_ExtractionEmevia"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "092d995a-1eda-4c8e-8c07-f0ba6c02ee35",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_MailApprenant"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_MailApprenant"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "0235f269-028a-4b58-9b99-3de1b067b77a",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_NiveauLangue"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_NiveauLangue"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "9934fb6c-fe9e-4386-ae49-1df61cee3b31",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_OVE"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_OVE"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "8f98c5bb-163f-4080-88b2-09db26690376",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_ParcoursPeriode"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_ParcoursPeriode"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "d0fb3e09-2ca7-4fcd-894b-418f88f81455",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_ParcoursSequence"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_ParcoursSequence"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "24559799-2ad3-4fed-8d53-da4d1ee388eb",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_PieceTelechargee"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_PieceTelechargee"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "b5f3c1c5-9258-44d6-88f7-0b675c715716",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_PrestationVoieEntreeReinscription"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_PrestationVoieEntreeReinscription"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "03240ea1-5a4e-4f88-8676-2db88a422ef7",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_QuestionnaireApprenant"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_QuestionnaireApprenant"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "dc5dbe8d-f720-49a9-91df-bfadda9d6d88",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_ReferentFinancier"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_ReferentFinancier"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "9129512e-d1cd-4546-abf1-966fcb4e6211",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_SISE"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_SISE"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "537bf686-d1a7-45b6-aa38-6c42acc021ec",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_SISE_EnCoursInscription"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_SISE_EnCoursInscription"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "2efca8c5-e60a-47cb-b3b4-5e04a9923f22",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_SISE_Ingenieur"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_SISE_Ingenieur"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "8021b2be-e5fb-40df-9b4d-898b305a55a0",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_SISEDetail"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_SISEDetail"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "6d193539-0439-412e-bc50-2b58b14d0135",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_SISEDetail_EnCoursInscription"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_SISEDetail_EnCoursInscription"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "5884c9c8-688a-4f2f-b39f-6aebcab707c7",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_SISEdiplome"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_SISEdiplome"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "d2e84bd8-233e-4f5c-b33e-87ed149ce9a5",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_Specialite"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_Specialite"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "2b03374f-28f3-4f6d-a96b-45a332abd4e0",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_TitreDeSejour"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_TitreDeSejour"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "392757bb-bd5c-4403-91a5-fd1d9ffcb4d8",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_TouteDonneeApprenant"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_TouteDonneeApprenant"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "d8ba1fac-47fd-4ac7-a917-fa97bb65bd94",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_TouteDonneeApprenantContact"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_TouteDonneeApprenantContact"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "e0bb4a2d-4cb2-4bdc-af03-eb185121cd38",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_VoieEntreeReinscription"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_VoieEntreeReinscription"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "c10a717c-8ae6-447d-a432-3709df1b59f5",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_VoieEntreeReinscription_ChampPersonnalise"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_VoieEntreeReinscription_ChampPersonnalise"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "70544b1d-9b4e-4235-9f9f-5bbc8ab6d31a",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_VoieEntreeReinscription_TotalPrestationModalite"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_VoieEntreeReinscription_TotalPrestationModalite"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "2fcadb1a-46b8-4795-80c8-3902be3127c5",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_VoieEntreeReinscriptionPiece"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_VoieEntreeReinscriptionPiece"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "10058ae0-0304-4757-8e7b-11d919951953",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Inscription_VoieParcoursPeriode"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Inscription_VoieParcoursPeriode"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "0e88e312-62d0-42d9-9cff-415adb9ea77c",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_Appreciation"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_Appreciation"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "f185f853-cae8-400b-89f5-862f84faa465",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ApprenantCertification"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ApprenantCertification"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "b4384287-f0d0-4643-94e7-a22a2f3725c8",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ApprenantCoursSansApprenantGroupeCours"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ApprenantCoursSansApprenantGroupeCours"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "1c1a3ecf-fc0b-495b-a976-791da481d72a",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ApprenantCoursSansSequence"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ApprenantCoursSansSequence"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "fd4c4242-d572-4f71-85cd-d4598b72a80e",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ApprenantCoursSequence"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ApprenantCoursSequence"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "14e4a113-6f64-4c9f-90e2-a4c83b4c96e4",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ApprenantGroupe"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ApprenantGroupe"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "fc6d5f2f-36d3-426f-817c-3e5b3a45416c",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ApprenantGroupeSansApprenantCours"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ApprenantGroupeSansApprenantCours"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "f809f17c-66de-4f57-bb4d-9165c0050981",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ApprenantGroupeSequence"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ApprenantGroupeSequence"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "8ac6806e-93d8-47bc-abbc-696e45b1aa14",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ApprenantPeriodeSequence"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ApprenantPeriodeSequence"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "ec15074a-366c-454c-9f11-a6751caafa35",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ApprenantSequenceModuleCoursResultat"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ApprenantSequenceModuleCoursResultat"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "8054198e-46dc-4d5e-ba64-8b6e159ac966",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ApprenantSequenceResultat"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ApprenantSequenceResultat"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "1e455ec5-e25b-4d90-bc3b-bad45d21311d",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ArborescenceApprenantCoursResultat2324_4N"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ArborescenceApprenantCoursResultat2324_4N"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "6a1e0948-b482-4a84-afe5-623f57b98b7a",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ArborescenceApprenantCoursResultat2425_4N"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ArborescenceApprenantCoursResultat2425_4N"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "ce3e5832-57a4-4063-a52a-b5311161c7da",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ArborescenceApprenantSequenceResultat"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ArborescenceApprenantSequenceResultat"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "c1cb23e2-a776-4e91-ac8b-deece45a5b4f",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ArborescenceApprenantSequenceResultat_4N"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ArborescenceApprenantSequenceResultat_4N"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "4d1ab80b-4cd9-44bc-a691-0af10c3f684a",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ArborescenceCoursSequenceResultat2122"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ArborescenceCoursSequenceResultat2122"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "a1686a6c-70b3-4088-bb8d-11212c3d7827",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ArborescenceCoursSequenceResultat2223"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ArborescenceCoursSequenceResultat2223"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "96b03d55-7ca3-45f6-9a2d-752e1c5315b4",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ArborescenceCoursSequenceResultat2324"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ArborescenceCoursSequenceResultat2324"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "e6e7fa3d-a466-4481-bcbb-e49341b27d9a",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ArborescenceCoursSequenceResultat2425"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ArborescenceCoursSequenceResultat2425"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "312b8c19-b2c4-4886-b488-66bfce3ce657",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ArborescenceCoursSequenceResultat2425_4N"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ArborescenceCoursSequenceResultat2425_4N"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "f7d71996-23ad-4c31-9f2a-d96b844f8b5c",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ArborescenceCoursSequenceResultat2526_4N"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ArborescenceCoursSequenceResultat2526_4N"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "b17b4593-92f8-4a10-96ea-96d2040a1d84",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_CahierDeTexte"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_CahierDeTexte"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "07745200-34c0-4a24-8862-c06c56f16aa4",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_Cours"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_Cours"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "3222def0-3a94-4e52-9f63-7804e37e18a7",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_CoursDecoupage"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_CoursDecoupage"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "f3ebea1b-3eaa-412a-89e0-17408d37df47",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_CoursGroupe"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_CoursGroupe"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "1ee81e47-b24e-4952-9796-c8023ad86335",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_CoursSansSequence"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_CoursSansSequence"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "654b5900-8983-4c7f-a714-d2d573999947",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_EnquetePedagogique1920"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_EnquetePedagogique1920"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "bec504a5-4d7c-4844-bec5-690ac5fda253",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_EnquetePedagogique2021"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_EnquetePedagogique2021"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "d714beda-87c4-4d2d-8fe9-9472c4695062",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_EnquetePedagogique2122"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_EnquetePedagogique2122"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "97e7de7e-3317-4e61-81aa-39e96a388e5b",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_EnquetePedagogique2223"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_EnquetePedagogique2223"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "be05c8bc-efc3-4f91-b90d-fd1abe86cc8d",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_EnquetePedagogique2324"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_EnquetePedagogique2324"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "6b7accbb-6119-4e30-9691-896aedcb2c80",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_EnquetePedagogique2425"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_EnquetePedagogique2425"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "9610349e-9a0e-470e-9847-2cf5dfd1c600",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_EnquetePedagogique2526"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_EnquetePedagogique2526"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "fc7264ae-dd6b-4ce1-8b3b-4c943067e860",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_EnquetePedagogiqueSequence"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_EnquetePedagogiqueSequence"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "ba582e4b-378f-49f2-9c30-646a215f915b",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_Evaluation"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_Evaluation"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "2413278f-9ee4-4665-99f5-3cba6574378d",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_InscriptionSequenceHorsParcours"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_InscriptionSequenceHorsParcours"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "0202fd3e-6c3e-4c52-875a-7c1506dc1fd9",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_JonctionSequenceSequence"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_JonctionSequenceSequence"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "f705563d-1746-47e3-bed1-7835eaf8cd00",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_Module"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_Module"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "ba4a6bba-482e-4bc3-85a0-850cff597e3d",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_Note2021"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_Note2021"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "3064a912-eac2-4753-8733-21f0b76a00fd",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_Note2122"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_Note2122"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "4354d8e2-f4bc-4c63-9cc1-b1764ff5aeb5",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_Note2223"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_Note2223"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "b4501ea8-22a3-430a-8c09-cc92d8c2f5b1",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_Note2324"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_Note2324"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "374487eb-c69d-4c5d-bd93-62b901133f5c",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_Note2425"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_Note2425"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "e166007d-98e0-4c45-85c2-52690bea0237",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_Note2526"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_Note2526"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "a4d64d34-a3cb-469a-895c-ebca019457b0",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_NotePeriode"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_NotePeriode"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "7eb09463-4dfd-457d-99a1-f5d0de7d61a5",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_NotePeriode_1920"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_NotePeriode_1920"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "620fa503-25a2-4703-b20d-7ba020f13e69",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_NotePeriode_2021"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_NotePeriode_2021"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "6d659da2-b1a9-43d3-aa27-e3fba1dc125f",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_NotePeriode_2122"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_NotePeriode_2122"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "ab2dd286-3acd-42d5-bdcc-90c630790c44",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_NotePeriode_2223"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_NotePeriode_2223"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "0279097f-13d8-4132-86c0-449b3a901b4e",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_NotePeriode_2324"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_NotePeriode_2324"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "cdeb81c4-fa1f-4ba7-8494-ab0b6c4751de",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_NotePeriode_2425"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_NotePeriode_2425"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "97025d44-6d91-43e0-a854-83cfb5474147",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_NotePeriode_2526"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_NotePeriode_2526"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "a92d25fe-80f1-4d4c-9431-2ac1b1cb5bb5",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_Programme"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_Programme"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "0742fc0e-ad0d-4354-9d46-ef871fe821d4",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_ReferenceCours"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_ReferenceCours"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "c31e2d79-514f-40be-baf1-8a20824be9db",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_RegleCours"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_RegleCours"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "00f51339-88be-46ef-93c1-34729d94b4d3",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_RegleSequence"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_RegleSequence"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "a7791cc8-c487-495b-b6cd-38ee28b69b36",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_SeanceEvaluation"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_SeanceEvaluation"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "8cb57103-05d2-44c3-936f-a5239dc4addb",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_Sequence"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_Sequence"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "76da21f1-6af9-43c5-9aed-d377f3fe9485",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_SequenceCours"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_SequenceCours"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "08685194-b811-4765-94d7-d6149705dea2",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_SessionRattrapageEvaluation"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_SessionRattrapageEvaluation"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "cd0051ce-24dc-4f05-b587-95e66dd578fb",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Pedagogie_StructureGroupe"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Pedagogie_StructureGroupe"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "6471b34f-910b-4f9d-85ed-640f7348affe",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_ApprenantAssiduiteCours2021"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_ApprenantAssiduiteCours2021"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "2c106015-39c8-47e2-b9b1-5c6775e7e8b4",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_ApprenantAssiduiteCours2122"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_ApprenantAssiduiteCours2122"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "2570f7da-01e7-4d09-8021-1fb4a3f76c11",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_ApprenantAssiduiteCours2223"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_ApprenantAssiduiteCours2223"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "25145d4f-59fe-40f1-81e7-40c22ba75ecc",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_ApprenantAssiduiteCours2324"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_ApprenantAssiduiteCours2324"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "4e7b3b88-77fb-46fd-adf1-acfec1148b41",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_ApprenantAssiduiteCours2425"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_ApprenantAssiduiteCours2425"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "f2a278a6-3124-4a36-af62-59be3b3466f2",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_ApprenantAssiduiteCours2526"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_ApprenantAssiduiteCours2526"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "dfbbd226-5a31-4560-8e8d-819b1ba700a8",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_ApprenantCoursPlanifieSansCoursAimaira"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_ApprenantCoursPlanifieSansCoursAimaira"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "9a0f6f7b-81a6-4667-a24d-880d76b5c70c",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_ApprenantSeanceSansCours"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_ApprenantSeanceSansCours"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "8caa27cb-5291-4c5b-bc37-2dada5548443",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_Badgeage"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_Badgeage"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "9e546145-3a58-497c-a5d2-72c77fef2007",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_BadgeageApprenant"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_BadgeageApprenant"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "480f33a7-7b37-4613-b8e5-d1791c41cf79",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_BadgeageSansApprenant"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_BadgeageSansApprenant"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "187e3778-fa2a-42af-a17d-7284c1b6052f",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_Disponibilite"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_Disponibilite"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "d3292212-5dda-4aee-98ea-362fa13aa09d",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_ProgrammeStaffe"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_ProgrammeStaffe"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "4950e446-9037-4522-8f95-37ff72d40b49",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SeanceApprenant2021"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SeanceApprenant2021"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "266869d8-73c4-4a05-bb02-0738bbd5dbf8",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SeanceApprenant2122"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SeanceApprenant2122"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "473e4ad4-ec7b-404f-aba2-ed08c7cc2558",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SeanceApprenant2122_S1"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SeanceApprenant2122_S1"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "4c5fbeb1-b5ad-4b4c-834e-2e5ce58f3fbb",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SeanceApprenant2122_S2"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SeanceApprenant2122_S2"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "aa7f5598-e76e-4b82-a9d5-53b8fdaad872",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SeanceApprenant2223_S1"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SeanceApprenant2223_S1"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "2743ae72-35f5-421d-826d-4681ad4bac38",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SeanceApprenant2223_S2"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SeanceApprenant2223_S2"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "36c22803-2479-415b-91f1-16afe56c405b",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SeanceApprenant2324_S1"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SeanceApprenant2324_S1"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "cb3e20b3-dca5-495e-a187-a293321d8632",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SeanceApprenant2324_S2"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SeanceApprenant2324_S2"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "0d530b82-202b-46b2-af44-8c1db8e1e462",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SeanceApprenant2425_S1"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SeanceApprenant2425_S1"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "c2878439-00b7-4514-8944-c3227e8e429e",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SeanceApprenant2425_S2"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SeanceApprenant2425_S2"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "a9fca8fc-2e60-4549-944b-1616eaa59d21",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SeanceApprenant2526"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SeanceApprenant2526"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "bc21e6b3-c23e-4b59-9ada-02937defdd46",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SeanceApprenant2526_S1"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SeanceApprenant2526_S1"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "fa36d1ba-b988-4171-b325-429f05499424",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SeanceApprenant2526_S2"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SeanceApprenant2526_S2"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "be91d6d3-04d8-4b8b-9722-43bad96578e2",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SeanceEnseignantDetailSalle"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SeanceEnseignantDetailSalle"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "c786ba1a-2d37-4334-8b9b-674ff12054f3",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SeanceEnseignantSalle"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SeanceEnseignantSalle"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "125162e9-31e5-4285-b6a7-e6f6d28eaa9a",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SeanceEnseignantSalleDetaillee"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SeanceEnseignantSalleDetaillee"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "6019ebf4-ad18-4e7d-a47e-c7af43032ecb",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SeanceGroupeEnseignantSalleDetaillee"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SeanceGroupeEnseignantSalleDetaillee"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "a901536f-bd08-45d9-bf16-7211c4206217",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SeanceToutType"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SeanceToutType"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "abfad4a8-f5b0-4e4c-aa5c-6a88bea86632",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SequenceCoursSeance"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SequenceCoursSeance"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "9a41b5e4-fb5f-45a7-a599-c9dc8c799d8e",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_SequenceProgrammeEvenement"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_SequenceProgrammeEvenement"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "22da97fd-b3a4-48c0-8232-6dc7bbfaa881",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Planification_Terminal"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Planification_Terminal"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "c69ad893-ffa4-4a8b-8eec-8eeafeff2cc4",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Referentiel_Batiment"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Referentiel_Batiment"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "fd503079-12bc-42b5-bb8a-6799e2608a94",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Referentiel_Campus"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Referentiel_Campus"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "26e6a5c7-3b21-4d01-937d-913b2c86c4d3",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Referentiel_Campus_ChampPersonnalise"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Referentiel_Campus_ChampPersonnalise"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "e904357a-c53f-4ccf-a508-1c349c898fa9",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Referentiel_CompteUtilisateur_ProfilAdministratif"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Referentiel_CompteUtilisateur_ProfilAdministratif"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "d7cd36ab-a3f5-4eac-9f75-431a74d44023",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Referentiel_Departement"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Referentiel_Departement"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "bb54cd38-f833-47d5-b5d9-2b35c1090ec8",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Referentiel_DroitUtilisateur"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Referentiel_DroitUtilisateur"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "8b00cfee-e6f0-4e06-abfa-cceacc26afe0",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Referentiel_LogIntegration"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Referentiel_LogIntegration"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "463dde7d-c2ca-4411-ac90-b951da2de734",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Referentiel_Marque"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Referentiel_Marque"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "a294307a-7bd0-447a-a535-ae6ff788346b",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Referentiel_ModeleDocument"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Referentiel_ModeleDocument"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "ee0fb996-a496-42d1-8a48-8f684efbd84f",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Referentiel_ModeleMail"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Referentiel_ModeleMail"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "4be7847d-3b46-45e3-8298-d5fbe2a0af74",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Referentiel_Periode"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Referentiel_Periode"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "8cb22e84-dd54-467e-8e48-13faa4450473",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Referentiel_ProgrammeRegimeSociete"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Referentiel_ProgrammeRegimeSociete"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "7f069fbb-a4de-4351-8dfa-ceb22097a173",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Referentiel_Questionnaire"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Referentiel_Questionnaire"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "2707284c-c8ef-410b-9c15-bcd727e05806",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Referentiel_Salle"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Referentiel_Salle"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "7b73950b-82fe-4257-a109-10ee05626d05",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Referentiel_Signature_TiersDeConfiance"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Referentiel_Signature_TiersDeConfiance"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "f55ee266-96f7-4c52-a7ca-8b84a8c0a866",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Referentiel_Site"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Referentiel_Site"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "eedce9d5-3988-44be-90fd-fce3f99e833c",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Referentiel_SocieteFacturation"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Referentiel_SocieteFacturation"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "5de2cec1-2303-45ad-82bb-5d401f40c331",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Referentiel_SocieteFacturation_ChampPersonnalise"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Referentiel_SocieteFacturation_ChampPersonnalise"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "4119b22f-2d08-4644-b643-4df92e76209d",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Referentiel_Utilisateur"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Referentiel_Utilisateur"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "5537fdbb-9901-45fe-989c-2e4e5037365c",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_AutreLieuFormation"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_AutreLieuFormation"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "83fc8376-3480-4b6d-a214-b9d26836ac26",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_CalendrierApprentissage"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_CalendrierApprentissage"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "a5288af4-d005-4b8c-8904-10042d884100",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_Convention"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_Convention"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "4b409e00-18c3-410f-b0cd-0f89519ffb06",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_Convention_SocieteFacturation"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_Convention_SocieteFacturation"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "34dc8614-0bfa-43fe-8231-97702dc49185",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_ConventionCommentaire"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_ConventionCommentaire"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "5b3a5f14-1e1e-4c19-9f0e-91690b02c5a6",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_ConventionQualification"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_ConventionQualification"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "32ef25c9-5e83-462a-bbb5-301f09ff1aca",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_ConventionQuestionnaire"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_ConventionQuestionnaire"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "7e0e6128-0b5a-43b8-ad97-2ca1f65e3c27",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_ConventionRupture"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_ConventionRupture"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "2242f1a5-f140-4882-8d7d-0550f40d6e6c",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_ConventionSansEcheance"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_ConventionSansEcheance"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "e0f104eb-cbd4-4442-b166-55902aac5054",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_ConventionSansInscriptionSequence"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_ConventionSansInscriptionSequence"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "1b6ae341-322f-4dd8-9d28-282937d07177",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_EcheanceApprentissage"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_EcheanceApprentissage"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "69161de2-cb79-4a94-9bb6-682078f7f761",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_EcheanceContratPro"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_EcheanceContratPro"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "dfcec665-8483-49ef-a12a-a10598fed939",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_EcheanceContratProDetail"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_EcheanceContratProDetail"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "d0922453-b792-4f2b-8f03-dcb49107f32f",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_EcheancierFacturationApprentissage"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_EcheancierFacturationApprentissage"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "d8b18802-3445-42f7-8eb6-3479992a76e2",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_EcheancierFacturationContratPro"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_EcheancierFacturationContratPro"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "dad6c899-4f81-4efd-bbf4-7fef323e67f7",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_EtatConvention"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_EtatConvention"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "aaa7fd81-cc59-4dde-9198-34f118c680d4",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_EvolutionEcheanceCFADOCK"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_EvolutionEcheanceCFADOCK"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "997c329a-ea37-4e36-8bfc-3f86e72698b6",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_LAN"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_LAN"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "69fcf757-fe18-40fe-890c-20a0c213319f",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_LANCompetencesPersonnalisees"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_LANCompetencesPersonnalisees"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "fb786361-d900-45f7-828b-33264cf5fa5e",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_LANEchelleEvaluation"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_LANEchelleEvaluation"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "edeb3d9e-c6dc-41ce-b2ad-2d034e3fd3a2",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_LANEvaluation"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_LANEvaluation"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "ed5e8e29-a404-4e7e-9037-131a65a0957a",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_LANEvaluation_CompetencesPersonnalisees"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_LANEvaluation_CompetencesPersonnalisees"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "c1fa77f9-007d-4b02-8084-e27dcbc28814",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_LANEvaluation_CompetencesRNCP"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_LANEvaluation_CompetencesRNCP"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "154d1f8e-5ab5-4466-a5d7-5be40bf10cf5",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_LANEvaluation_QuestionOuverte"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_LANEvaluation_QuestionOuverte"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "a31c8176-c751-4f5c-bf30-65b365de8d36",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_LANEvaluation_SoftSkills"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_LANEvaluation_SoftSkills"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "49f7b8f9-a700-44e8-b26f-dd39e8af2966",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_LANModeleEvaluation"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_LANModeleEvaluation"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "1969548d-4864-42f8-a6b2-e10f72f8ce1a",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_LANModeleEvaluation_CompetencesRNCP"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_LANModeleEvaluation_CompetencesRNCP"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "7d44afa6-d064-4295-a8a1-bb9263dc7272",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_LANModeleEvaluation_QuestionOuverte"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_LANModeleEvaluation_QuestionOuverte"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "ff27416b-4d3c-4e14-b633-176cfdd24818",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_LANModeleEvaluation_SoftSkills"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_LANModeleEvaluation_SoftSkills"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "9a6cde73-807e-4799-805e-513d918b79fe",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_LANReferentLANEcole"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_LANReferentLANEcole"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "ee0e9b28-f868-406c-ba75-9a64b439849c",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_LANReferentLANEcoleCommentaire"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_LANReferentLANEcoleCommentaire"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "00c587d8-e12d-4409-80eb-425ade10a78a",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_LANReferentLANEcoleMail"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_LANReferentLANEcoleMail"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "2ff0d48f-d0f2-4766-b28e-2b63be58c51b",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_LANScenarioEvaluation"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_LANScenarioEvaluation"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "75864d73-95df-4b1c-a0a7-aabb1245d342",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_LANSoftSkills"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_LANSoftSkills"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "9a5324e3-5047-40d3-97c4-db234a050686",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_MailSignataire"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_MailSignataire"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "90e5d36d-b7af-42a8-8652-cb611ca153cb",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_MailTuteur"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_MailTuteur"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "775782c5-3ac5-4c30-afef-35ae55f04d85",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_OrganismeFinanceur_Antenne"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_OrganismeFinanceur_Antenne"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "39f403b6-2b6c-4867-aed8-f0db10332394",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_SIFA"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_SIFA"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "040c2be7-7d03-4cf4-b316-4fd24da9dbdf",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_SIFA_2024"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_SIFA_2024"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "dddb9360-e69c-4667-8fbe-eb70b68396d3",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_SIFADetail"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_SIFADetail"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "612ba87f-d6c3-45a3-9609-355d76a30d7e",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_SIFADetail_2024"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_SIFADetail_2024"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "37490e77-d0f9-4e2d-9e87-0be43c6dc62b",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "RelationEntreprise_TransmissionContratCFADOCK"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "RelationEntreprise_TransmissionContratCFADOCK"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "05c0f84c-8aa1-4ea8-8184-bc1208daf3f8",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Selection_Candidat"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Selection_Candidat"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "cabe2dc6-4cd2-4e59-9062-9d742483829d",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Selection_Jure"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Selection_Jure"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "4b07ebb1-f393-4f4f-a403-5f5e4dc30e15",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Selection_JureCreneau"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Selection_JureCreneau"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "08a0fd1c-26ac-4583-a359-1baf7c127327",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Selection_JureEpreuve"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Selection_JureEpreuve"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "ea4dd395-f16f-4c4d-b642-c74410d3e818",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Selection_Jury"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Selection_Jury"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "027d1ab0-1951-4fe5-988c-67ef5b1b978f",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Selection_MailJure"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Selection_MailJure"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "ec156145-41e0-4f36-952b-71554ba160a1",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Selection_ResultatEpreuve"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Selection_ResultatEpreuve"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "af87657c-f5fe-4ab9-960d-17394b9fef66",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Selection_ResultatEpreuveJure"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Selection_ResultatEpreuveJure"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "3fba344b-86ed-47d6-8ced-4a765331b426",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Selection_ResultatEpreuveQuestionnaire"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Selection_ResultatEpreuveQuestionnaire"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "1fc4f6c8-388e-4171-a3c7-f175d3439441",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Selection_Session"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Selection_Session"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "1b21921c-2994-450a-b043-3f06f4ee9cae",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Selection_SessionCreneau"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Selection_SessionCreneau"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    },
+    {
+      "id": "5396e364-060d-4a65-8ca9-83e62251e4c9",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "path": "Selection_SyntheseCreneauEpreuve"
+          },
+          "protocolSettings": {}
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "Selection_SyntheseCreneauEpreuve"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    }
+  ]
+}

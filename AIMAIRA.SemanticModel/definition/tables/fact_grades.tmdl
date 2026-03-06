@@ -1,0 +1,406 @@
+table fact_grades
+	lineageTag: a781c904-7765-4d43-916d-3605031bb238
+	sourceLineageTag: [dbo].[fact_grades]
+
+	column source_table
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 729b3045-54c9-4855-8bca-c6047aef1852
+		sourceLineageTag: source_table
+		summarizeBy: none
+		sourceColumn: source_table
+
+		annotation SummarizationSetBy = Automatic
+
+	column academic_year
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ec36cc61-6ef4-4b5d-af22-dcd02311a9c6
+		sourceLineageTag: academic_year
+		summarizeBy: none
+		sourceColumn: academic_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_period_grade
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4a6fdee3-7bd1-439a-8f32-5756fccdf349
+		sourceLineageTag: is_period_grade
+		summarizeBy: none
+		sourceColumn: is_period_grade
+
+		annotation SummarizationSetBy = Automatic
+
+	column grade_key
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0dd92989-5403-4176-ab81-61c744b8d36f
+		sourceLineageTag: grade_key
+		summarizeBy: none
+		sourceColumn: grade_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column evaluation_key
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b11cddd0-f1cd-4796-a18a-abf13b8e2ca1
+		sourceLineageTag: evaluation_key
+		summarizeBy: none
+		sourceColumn: evaluation_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column student_code
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3fe72f3e-8072-4fcf-bd26-9b9e26b76152
+		sourceLineageTag: student_code
+		summarizeBy: none
+		sourceColumn: student_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column course_code
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 7a680ac0-c2c8-4752-9de6-12db1a39c594
+		sourceLineageTag: course_code
+		summarizeBy: none
+		sourceColumn: course_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column course_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 04691330-8bcb-4c2d-a35f-fd0ef100c3ef
+		sourceLineageTag: course_id
+		summarizeBy: none
+		sourceColumn: course_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column programme_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: bf5bdc08-6622-486b-b20a-1b7bc3d55b03
+		sourceLineageTag: programme_id
+		summarizeBy: none
+		sourceColumn: programme_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column programme_acronym
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5b1db8cf-8a5f-4932-9835-99f5269a665b
+		sourceLineageTag: programme_acronym
+		summarizeBy: none
+		sourceColumn: programme_acronym
+
+		annotation SummarizationSetBy = Automatic
+
+	column programme_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6289aca9-c81f-4a50-9dbf-a6f91709b169
+		sourceLineageTag: programme_name
+		summarizeBy: none
+		sourceColumn: programme_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column student_last_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9a9935bc-ddb2-4c87-823f-a0ba111d062e
+		sourceLineageTag: student_last_name
+		summarizeBy: none
+		sourceColumn: student_last_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column student_first_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 718ec3fc-f2d1-445c-a109-1a3e336fcbfb
+		sourceLineageTag: student_first_name
+		summarizeBy: none
+		sourceColumn: student_first_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column course_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f284cd7b-db32-49f0-a6be-20362596474d
+		sourceLineageTag: course_name
+		summarizeBy: none
+		sourceColumn: course_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column module_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9101f893-64d2-439a-af04-4177238542de
+		sourceLineageTag: module_name
+		summarizeBy: none
+		sourceColumn: module_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column entity_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1188b2b2-a662-41bd-a8ed-7e0d4c0f6d87
+		sourceLineageTag: entity_name
+		summarizeBy: none
+		sourceColumn: entity_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column exam_session
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 46b4acf1-c0b8-4c2c-aa18-0c5e8639c634
+		sourceLineageTag: exam_session
+		summarizeBy: none
+		sourceColumn: exam_session
+
+		annotation SummarizationSetBy = Automatic
+
+	column parent_session
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 12277bd3-c269-4de7-b257-21492a399e4a
+		sourceLineageTag: parent_session
+		summarizeBy: none
+		sourceColumn: parent_session
+
+		annotation SummarizationSetBy = Automatic
+
+	column session_start_date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 62d215a4-88ad-4cae-887c-9c77db4069fd
+		sourceLineageTag: session_start_date
+		summarizeBy: none
+		sourceColumn: session_start_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column session_end_date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 5438ed43-fa26-4e4f-a802-fcf5551ecd2b
+		sourceLineageTag: session_end_date
+		summarizeBy: none
+		sourceColumn: session_end_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column evaluation_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c70dcd68-4427-4a21-a1f8-b7a392d0b8d7
+		sourceLineageTag: evaluation_name
+		summarizeBy: none
+		sourceColumn: evaluation_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_homework
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 504e4aa1-1d6a-4809-aa31-163053305468
+		sourceLineageTag: is_homework
+		summarizeBy: none
+		sourceColumn: is_homework
+
+		annotation SummarizationSetBy = Automatic
+
+	column evaluation_weight
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e611dd9c-1dfe-4c0d-ab99-46a8d1c16395
+		sourceLineageTag: evaluation_weight
+		summarizeBy: none
+		sourceColumn: evaluation_weight
+
+		annotation SummarizationSetBy = Automatic
+
+	column course_session_weight
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 86bfb802-d962-46b3-9e8d-1e53966a1a7b
+		sourceLineageTag: course_session_weight
+		summarizeBy: none
+		sourceColumn: course_session_weight
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_excusable
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e970642d-99aa-4583-86a4-0209745c68ba
+		sourceLineageTag: is_excusable
+		summarizeBy: none
+		sourceColumn: is_excusable
+
+		annotation SummarizationSetBy = Automatic
+
+	column grade_published
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 79c1fe41-d4ea-4797-a335-dca3e346e345
+		sourceLineageTag: grade_published
+		summarizeBy: none
+		sourceColumn: grade_published
+
+		annotation SummarizationSetBy = Automatic
+
+	column grade_value
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: fdce0fb6-1e6c-40d5-9579-67059d240ae4
+		sourceLineageTag: grade_value
+		summarizeBy: none
+		sourceColumn: grade_value
+
+		annotation SummarizationSetBy = Automatic
+
+	column course_average
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b594a7a9-0dca-41a1-a062-dd4e4f7db9c1
+		sourceLineageTag: course_average
+		summarizeBy: none
+		sourceColumn: course_average
+
+		annotation SummarizationSetBy = Automatic
+
+	column ects_credits
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6973f458-ca0d-4c83-bb22-80ef2faa47ee
+		sourceLineageTag: ects_credits
+		summarizeBy: none
+		sourceColumn: ects_credits
+
+		annotation SummarizationSetBy = Automatic
+
+	column course_passed
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: eb6c7999-f407-4a22-9a56-75ff1b4d0fd2
+		sourceLineageTag: course_passed
+		summarizeBy: none
+		sourceColumn: course_passed
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_absent
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b891f172-6cb4-44d4-8e37-45391d11cdd3
+		sourceLineageTag: is_absent
+		summarizeBy: none
+		sourceColumn: is_absent
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_resit
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 05618a88-7dc7-41d8-bc65-77d96ced1a72
+		sourceLineageTag: is_resit
+		summarizeBy: none
+		sourceColumn: is_resit
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_exempted
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 978d6df4-f99f-42d9-b909-975b514c4194
+		sourceLineageTag: is_exempted
+		summarizeBy: none
+		sourceColumn: is_exempted
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_excused
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e89362e7-c077-48c5-9f68-bf5eb98cfefa
+		sourceLineageTag: is_excused
+		summarizeBy: none
+		sourceColumn: is_excused
+
+		annotation SummarizationSetBy = Automatic
+
+	column excuse_reason
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b5779369-6ec2-4f78-a025-ed9470a6a944
+		sourceLineageTag: excuse_reason
+		summarizeBy: none
+		sourceColumn: excuse_reason
+
+		annotation SummarizationSetBy = Automatic
+
+	column group_codes
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 00b732f3-4260-48c9-8a9b-72a5cbdf7dd2
+		sourceLineageTag: group_codes
+		summarizeBy: none
+		sourceColumn: group_codes
+
+		annotation SummarizationSetBy = Automatic
+
+	column gold_updated_at
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: ff590b7e-2d2d-4118-8e09-5809f1ce1713
+		sourceLineageTag: gold_updated_at
+		summarizeBy: none
+		sourceColumn: gold_updated_at
+
+		annotation SummarizationSetBy = Automatic
+
+	column pipeline_run_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3e1974df-f1e5-4da2-a959-d842949b6f43
+		sourceLineageTag: pipeline_run_id
+		summarizeBy: none
+		sourceColumn: pipeline_run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column row_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f00ef4ce-1337-4cc7-bde5-5f00145717a9
+		sourceLineageTag: row_id
+		summarizeBy: none
+		sourceColumn: row_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_grades = entity
+		mode: directLake
+		source
+			entityName: fact_grades
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

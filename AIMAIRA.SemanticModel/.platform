@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "AIMAIRA"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "cc260435-1f87-8ca9-49cc-0b02e6d1d994"
+  }
+}

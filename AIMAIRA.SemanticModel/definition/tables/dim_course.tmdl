@@ -1,0 +1,234 @@
+table dim_course
+	lineageTag: 1aca5d45-5563-47b7-9efd-95955b4b9f8f
+	sourceLineageTag: [dbo].[dim_course]
+
+	column course_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6561409e-34d1-49d6-a0ba-64b6e6a4c7e7
+		sourceLineageTag: course_id
+		summarizeBy: none
+		sourceColumn: course_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column course_code
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 928ae000-b3b6-4210-ab58-5dfb7ada23af
+		sourceLineageTag: course_code
+		summarizeBy: none
+		sourceColumn: course_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column course_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5a97747c-3fcf-458f-aa24-508454ed3489
+		sourceLineageTag: course_name
+		summarizeBy: none
+		sourceColumn: course_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column sequence_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 062a756f-7c61-43f7-ae43-606a5c077a88
+		sourceLineageTag: sequence_id
+		summarizeBy: none
+		sourceColumn: sequence_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column sequence_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 66e1dcaa-940f-4cb2-aa2f-115f673a69f6
+		sourceLineageTag: sequence_name
+		summarizeBy: none
+		sourceColumn: sequence_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column programme_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 201cba30-5c4f-4365-a8eb-7700176d6b66
+		sourceLineageTag: programme_id
+		summarizeBy: none
+		sourceColumn: programme_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column programme_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5db06a76-6d7a-46ce-a0fa-9c53c27d4df3
+		sourceLineageTag: programme_name
+		summarizeBy: none
+		sourceColumn: programme_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column programme_acronym
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 09802246-2f29-4b67-941d-388e8c97eaa2
+		sourceLineageTag: programme_acronym
+		summarizeBy: none
+		sourceColumn: programme_acronym
+
+		annotation SummarizationSetBy = Automatic
+
+	column entity_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: eb4e805f-e02d-4706-b786-4f8cfae9f9cb
+		sourceLineageTag: entity_name
+		summarizeBy: none
+		sourceColumn: entity_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column entity_name_alt
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 522bfe96-7e52-4bbc-a496-d1b06e859eb2
+		sourceLineageTag: entity_name_alt
+		summarizeBy: none
+		sourceColumn: entity_name_alt
+
+		annotation SummarizationSetBy = Automatic
+
+	column campus_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1b71c27c-d451-44ed-bd76-af432f8382e3
+		sourceLineageTag: campus_id
+		summarizeBy: none
+		sourceColumn: campus_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column campus_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c3f65612-87c0-4225-a95a-45de05ed9b4a
+		sourceLineageTag: campus_name
+		summarizeBy: none
+		sourceColumn: campus_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column campus_code
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3e5948d8-1b1d-49b3-9dbd-8bc8f5669374
+		sourceLineageTag: campus_code
+		summarizeBy: none
+		sourceColumn: campus_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column session_type_code
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e185ac4b-db01-4b0b-a6e7-215c5517a7b9
+		sourceLineageTag: session_type_code
+		summarizeBy: none
+		sourceColumn: session_type_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column session_type
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a96fa0ef-d6eb-4b4a-92a6-a118efca77ff
+		sourceLineageTag: session_type
+		summarizeBy: none
+		sourceColumn: session_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column delivery_mode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 67bf0dd9-1c16-46c0-b304-33c7dd9e53cb
+		sourceLineageTag: delivery_mode
+		summarizeBy: none
+		sourceColumn: delivery_mode
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_face_to_face
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8f325f07-9207-4c3a-9a90-bcf7503afade
+		sourceLineageTag: is_face_to_face
+		summarizeBy: none
+		sourceColumn: is_face_to_face
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_in_person
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ddd0d32f-d0f6-4b8e-be2d-935e1531017a
+		sourceLineageTag: is_in_person
+		summarizeBy: none
+		sourceColumn: is_in_person
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_remote
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1b322b6c-67f5-48ee-8418-429420aaee4a
+		sourceLineageTag: is_remote
+		summarizeBy: none
+		sourceColumn: is_remote
+
+		annotation SummarizationSetBy = Automatic
+
+	column academic_year
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6b6e1fcb-ef25-4f22-a7a3-7f8f65ba3dc4
+		sourceLineageTag: academic_year
+		summarizeBy: none
+		sourceColumn: academic_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column gold_updated_at
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: b8b56f4a-dd56-464a-8216-590bb705d12b
+		sourceLineageTag: gold_updated_at
+		summarizeBy: none
+		sourceColumn: gold_updated_at
+
+		annotation SummarizationSetBy = Automatic
+
+	column pipeline_run_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 57220c75-d7cf-4186-91cf-fb914e8944f1
+		sourceLineageTag: pipeline_run_id
+		summarizeBy: none
+		sourceColumn: pipeline_run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_course = entity
+		mode: directLake
+		source
+			entityName: dim_course
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

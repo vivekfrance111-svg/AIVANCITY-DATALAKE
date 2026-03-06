@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "MLExperiment",
+    "displayName": "AI_Data_Agent"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "078ccb76-af06-be4d-48db-f19a9c6a8987"
+  }
+}

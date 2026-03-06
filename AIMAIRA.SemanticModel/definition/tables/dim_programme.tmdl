@@ -1,0 +1,177 @@
+table dim_programme
+	lineageTag: cd42f95c-4bd7-498b-a443-ef855369ca8c
+	sourceLineageTag: [dbo].[dim_programme]
+
+	column programme_id
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: d8340957-f552-4c68-b13a-49061e719446
+		sourceLineageTag: programme_id
+		summarizeBy: sum
+		sourceColumn: programme_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column programme_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 608aec29-4fec-4fee-9010-4976851b0b00
+		sourceLineageTag: programme_name
+		summarizeBy: none
+		sourceColumn: programme_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column programme_name_external
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f2a93c13-d317-4c2a-9999-ed99fb456fa1
+		sourceLineageTag: programme_name_external
+		summarizeBy: none
+		sourceColumn: programme_name_external
+
+		annotation SummarizationSetBy = Automatic
+
+	column programme_acronym
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: dcce4b44-8a41-4c76-8b94-39f2a273eb81
+		sourceLineageTag: programme_acronym
+		summarizeBy: none
+		sourceColumn: programme_acronym
+
+		annotation SummarizationSetBy = Automatic
+
+	column programme_legal_code
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 179a812a-e874-448d-a94d-adde899034d6
+		sourceLineageTag: programme_legal_code
+		summarizeBy: none
+		sourceColumn: programme_legal_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column brand
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2b91d284-a2a8-46ff-b652-1738b3667b34
+		sourceLineageTag: brand
+		summarizeBy: none
+		sourceColumn: brand
+
+		annotation SummarizationSetBy = Automatic
+
+	column entity_id
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: af2c3b7b-eb65-494c-abc5-06dc1912242c
+		sourceLineageTag: entity_id
+		summarizeBy: sum
+		sourceColumn: entity_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column entity_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: afd51a75-fc94-4b9a-9a8d-0e4b419af847
+		sourceLineageTag: entity_name
+		summarizeBy: none
+		sourceColumn: entity_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column entity_acronym
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6c0dd64b-1017-4f39-afdc-178854b284e6
+		sourceLineageTag: entity_acronym
+		summarizeBy: none
+		sourceColumn: entity_acronym
+
+		annotation SummarizationSetBy = Automatic
+
+	column entity_code
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0762ef22-507c-4047-b3be-ebe99a956889
+		sourceLineageTag: entity_code
+		summarizeBy: none
+		sourceColumn: entity_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column campus_id
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 52b1732b-bfd2-48c5-ab9d-345b53827685
+		sourceLineageTag: campus_id
+		summarizeBy: sum
+		sourceColumn: campus_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column campus_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c89d6613-c426-49da-bf7d-4c2029929eb8
+		sourceLineageTag: campus_name
+		summarizeBy: none
+		sourceColumn: campus_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column campus_code
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2d3948a2-55f9-4644-9236-9440384a7777
+		sourceLineageTag: campus_code
+		summarizeBy: none
+		sourceColumn: campus_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column campus_legal_code
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 25e57aea-cd86-47bd-ba10-74bd95694f7e
+		sourceLineageTag: campus_legal_code
+		summarizeBy: none
+		sourceColumn: campus_legal_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column gold_updated_at
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 14b744cc-ec88-4176-9a63-874769e863d8
+		sourceLineageTag: gold_updated_at
+		summarizeBy: none
+		sourceColumn: gold_updated_at
+
+		annotation SummarizationSetBy = Automatic
+
+	column pipeline_run_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: d572a1e6-9ffc-4138-9dd4-50da7fb39d60
+		sourceLineageTag: pipeline_run_id
+		summarizeBy: none
+		sourceColumn: pipeline_run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_programme = entity
+		mode: directLake
+		source
+			entityName: dim_programme
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+
